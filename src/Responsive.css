@@ -1,27 +1,82 @@
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 520px) {
     body {
         font-size: 12px;
     }
 
+    .infoSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
     .infoNav {
         width: 95%;
-        top: 8.1%;
-        margin-left: 2%;
-    }
+        top: 6.2%;
+        margin-left: -1%;
 
+    }
+    .card-title {
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .schedule {
+        font-size: 10px;
+        color: #6b7280;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .heading {
+        font-size: 12px;
+        font-weight: bold;
+        margin-bottom: 24px;
+        border-left: 7px solid blue;
+        height: 2em;
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        margin-left: -1%;
+    }
+    .basicinfo ul li button {
+        border-radius: 33px;
+        padding: 8px;
+        background: white;
+        border: 1px solid #000000ab;
+        font-size: 11px;
+    }
+    .details-description{
+        font-size: 11px;
+    }
+    .details-container, .Faq-container,.prize-container{
+        font-size: 12px;
+    }
+    .content {
+        margin-bottom: 16px;
+        font-size: 11px;
+    }
     .infoNav ul {
         font-size: 9px;
-        margin-left: -10%;
+        margin-left: -4%;
     }
-
+    .sidenav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 98%;
+        margin-left: 6%;
+    }
+    .contentSection {
+        flex-direction:column-reverse;
+    }
     .competeInfo,
     .details,
     .stageAndTimeline,
-    .prizes,
+    .prizes ,
     .Reviews ,
-    .Faq  {
+    .Faq,
+    .deadlineInfo{
         width: 95%;
-        margin-left: 2%;
     }
     .certificate-btn, .placement-btn {
         background: #e6f7f1;
@@ -52,30 +107,87 @@
         padding: 5px;
       }
 }
-
-/* Tablet screens (up to 1024px) */
-@media only screen and (max-width:1024px) {
+@media only screen and (min-width: 0px) and (max-width: 360px)  {
+    .infoNav ul {
+        font-size: 7px;
+        margin-left: -12%;
+    }
+}
+/* @media only screen and (min: 768px) and (max-width:1024){
+    .infoNav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        background-color: white;
+        margin-top: 1%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.27);
+        position: sticky;
+        top: 13%;
+        z-index: 1000;
+        background-color: white;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .servicelist li {
+        list-style: none;
+        margin-left: 1%;
+        padding: 3px 5px;
+        color: black;
+    }
+    .servicelist li a {
+        color: black;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        padding: 7px;
+        align-items: center;
+        border-radius: 16px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+} */
+/*Tablet screens (up to 1024px) */
+@media only screen and (min-width: 520px) and (max-width: 768px) {
     body {
         font-size: 20px;
     }
-    
+    /*  */
+    .sidenav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: 2%;
+    }
+    .infoSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
     .infoNav {
         width: 95%;
         top: 8.1%;
-        margin-left: 2%;
+        margin-left: -1%;
+
     }
 
     .infoNav ul {
-        font-size: 9px;
+        font-size: 12px;
         margin-left: -4%;
     }
-
+    .contentSection {
+        flex-direction:column-reverse;
+    }
+    .Faq,.prizes ,.Reviews ,.details{
+        margin-left: -1%;
+        width: 95%;
+    }
     .competeInfo,
-    .details,
     .stageAndTimeline,
-    .prizes ,
-    .Reviews ,
-    .Faq{
+    .deadlineInfo{
         width: 95%;
         margin-left: 2%;
     }

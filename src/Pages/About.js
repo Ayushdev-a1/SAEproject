@@ -7,6 +7,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { TiShoppingBag } from "react-icons/ti";
 import { TbWorld } from "react-icons/tb";
 import { CiCalendar } from "react-icons/ci";
+import Sidenav from '../Component/Sidenav';
 export default function About() {
     const [activeIndex, setActiveIndex] = useState(null);
     const stagesTimelineRef = useRef(null);
@@ -273,8 +274,8 @@ export default function About() {
                         </div>
                     </div>
                     {/*      */}
-                    <div className="deadlineInfo">
-
+                    <div className="deadlineInfo" style={{marginTop:"0.5%"}}>
+                       <Sidenav/>
                     </div>
                 </div>
             </div>
